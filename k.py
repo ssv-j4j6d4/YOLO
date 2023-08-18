@@ -7,7 +7,7 @@ import os
 #print(classes)
 def res(img):
       #  img=cv2.imread(img1)
-        yolo = cv2.dnn.readNet("C:/Users/polep/OneDrive/Documents\Custom Office Templates/Desktop/project/yolov3-spp.weights", "C:/Users/polep/OneDrive/Documents/Custom Office Templates/Desktop/project/yolo.cfg")
+        yolo = cv2.dnn.readNet("https://drive.google.com/file/d/1dZ7nKYq9t0NP1HL3WNuECG5tnV3jWJSZ/view?usp=sharing", "C:/Users/polep/OneDrive/Documents/Custom Office Templates/Desktop/project/yolo.cfg")
         classes = open("C:/Users/polep/OneDrive/Documents/Custom Office Templates/Desktop/project/coco.names", "r").read().splitlines()
         blob=cv2.dnn.blobFromImage(img,1/255,(320,320),swapRB=True,crop=False)
         j=blob[0].reshape(320,320,3)
